@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Importando Bootstrap e estilos customizados -->
+  <link rel="stylesheet" href="./bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <title>Thi Code</title>
+</head>
+<body>
+  <!-- Ícone do menu mobile -->
+  <i class="bi bi-list menu-mobile"></i>
+
+  <!-- Seção do header com perfil e links sociais -->
+  <aside id="header">
+    <section class="profile">
+      <img src="./profile.png" alt="Foto de Perfil">
+      <h1>Roberto Carlos</h1>
+      <div class="social-links mt-4 text-center">
+        <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </section>
+
+    <!-- Menu de navegação -->
+    <nav id="navbar" class="nav-menu">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house" aria-hidden="true"></i>Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio"><i class="bi bi-collection" aria-hidden="true"></i>Portfólio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i>Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades"><i class="bi bi-list-check" aria-hidden="true"></i>Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark" aria-hidden="true"></i>Currículo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato"><i class="bi bi-envelope" aria-hidden="true"></i>Contato</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main id="main"
+
+    <!-- Seção Início -->
+    <section id="inicio" class="row m-0 p-0">
+      <div id="painel" class="col-md-7 d-flex justify-content-center align-items-center flex-column">
+        <h1 class="text-white text-shadow align-self-start ms-5">Olá! bem-vindo ao meu perfil.</h1>
+        <h3 class="text-white text-shadow align-self-start ms-5">Eu sou um Desenvolvedor Full Stack</h3>
+        <div id="painel" class="row mb-3 align-self-start ms-4">
+          <div class="col-md-4">
+            <ul class="list-group list-group-flush fs-5">
+              <li class="list-group-item custom-list-item text-white text-shadow">
+                <span class="fw-bold">Linkedin: </span> <p class="fw-light text-shadow">robertocarlossouzasilva</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-group list-group-flush fs-5">
+              <li class="list-group-item custom-list-item text-white text-shadow">
+                <span class="fw-bold">Github: </span> <p class="fw-light text-shadow">carlosbetoj2</p>
+              </li>
+            </ul>
+          </div>
+          <div id="painel-icon" class="col-md-4 ms-3 mt-4">
+            <div class="social-links d-flex align-items-start">
+              <img src="./html.webp" alt="HTML" class="w-25 me-3">
+              <img src="./css.webp" alt="CSS" class="w-25 me-3">
+              <img src="./javascript.webp" alt="JavaScript" class="w-25 me-3">
+              <img src="./python.webp" alt="Python" class="w-25 me-3">
+              <img src="./php.webp" alt="PHP" class="w-25 me-3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 position-relative">
+        <div id="arraste" class="position-absolute bottom-0 end-0 d-flex align-items-center mb-3 me-3">
+          <i class="bi bi-arrow-down text-white pe-2 fs-4" aria-hidden="true"></i>
+          <a href="#sobre">Arraste para mais</a>  
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Portfólio -->
+    <section id="portfolio" class="py-4 section-bg">
+      <div class="container pb-5 pt-5">
+          <div class="text-center pb-4" data-anime="down">
+            <h2 class="fw-bold">Portfólio</h2>
+            <p class="fw-light">Meus projetos desenvolvidos recentemente.</p>    
+          </div>
+          <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel" data-anime="left">
+          <!-- Indicadores do Carrossel -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <!-- Itens do Carrossel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Cartão do Portfólio -->
+                <div class="col">
+                  <div id="box-img" class="card">
+                    <div class="img"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título do Card</h5>
+                      <p class="card-text">Este é um card mais longo com texto de apoio abaixo como uma introdução natural ao conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="link" target="_blank" class="btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="box-img" class="card">
+                    <div class="img"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título do Card</h5>
+                      <p class="card-text">Este é um card mais longo com texto de apoio abaixo como uma introdução natural ao conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="link" target="_blank" class="btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                        <a href="link" target="_blank" class="btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="box-img" class="card">
+                    <div class="img"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título do Card</h5>
+                      <p class="card-text">Este é um card mais longo com texto de apoio abaixo como uma introdução natural ao conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="link" target="_blank" class="btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                        <a href="link" target="_blank" class="btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Repetir para outros itens do carrossel -->
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div id="box-img" class="card">
+                    <div class="img"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título do Card</h5>
+                      <p class="card-text">Este é um card mais longo com texto de apoio abaixo como uma introdução natural ao conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="link" target="_blank" class="btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="box-img" class="card">
+                    <div class="img"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título do Card</h5>
+                      <p class="card-text">Este é um card mais longo com texto de apoio abaixo como uma introdução natural ao conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="link" target="_blank" class="btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                        <a href="link" target="_blank" class="btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div id="box-img" class="card">
+                    <div class="img"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Título do Card</h5>
+                      <p class="card-text">Este é um card mais longo com texto de apoio abaixo como uma introdução natural ao conteúdo adicional. Este conteúdo é um pouco mais longo.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="link" target="_blank" class="btn-outline-dark me-3"><i class="bi bi-github"></i></a>
+                        <a href="link" target="_blank" class="btn-outline-primary"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Controles do Carrossel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-4 dark-blue">
+      <div class="container py-5">
+        <div class="text-white" data-anime="left">
+          <h2 class="fw-bold">Um pouco sobre mim</h2>
+          <p class="fw-light">Fascinado pela programação, estou constantemente empenhado em adquirir conhecimento prático no desenvolvimento de softwares e progredindo para oferecer soluções diferentes. Com o passar dos anos, percebi que programar não se resume apenas a escrever código, mas sim a resolver problemas, inovar e criar soluções que podem transformar nossa realidade.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="img-fluid shadow my-3" src="./profileMenu.png" alt="Foto de Perfil" data-anime="left">
+          </div>
+          <div class="col-md-8 mt-5" data-anime="right">
+            <h1 class="text-white fw-bold">Muito prazer, <p class="color-blue fw-bold">sou Roberto Carlos.</p></h1>
+            <p class="text-white fw-light">Formado em Análise e desenvolvimento de Sistemas pela Estácio, com experiência em web design e back-end, especialmente em Python e PHP. Sou alguém dedicado e comprometido com o desenvolvimento profissional e pessoal, sempre em busca de aprimorar minhas habilidades.</p>
+            <p class="text-white fw-light">Desde a infância tenho paixão por tecnologia e informática. Estou constantemente em busca de novos desafios e oportunidades para ampliar minhas habilidades e aprender com novas expeciência, visando ser a melhor versão de mim mesmo todos os dias</p>
+            <div class="social-links mt-4">
+              <a href="#" target="_blank"><i class=" bi bi-linkedin m-1 fs-4"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-github m-1 fs-4"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-youtube m-1 fs-4"></i></a>
+              <a href="#" target="_blank"><i class="bi bi-instagram m-1 fs-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="habilidades" class="py-4 section-bg">
+      <div class="container pb-5">
+          <div class="text-center" data-anime="down">
+            <h2 class="fw-bold pt-5">Habilidades</h2>
+            <p class="fw-light">Durante toda minha vida, adquiri habilidades técnicas e profissionais que se mostraram valiosas tanto para minha carreira quanto para minha vida pessoal.</p>
+          </div>
+        <div class="row">
+          <!-- Lista de habilidades -->
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">HTML</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" data-anime="left" aria-valuemin="0" aria-valuemax="100">78%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">CSS</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 74%;" aria-valuenow="74" data-anime="left" aria-valuemin="0" aria-valuemax="100">74%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">JavaScript</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 71%;" aria-valuenow="71" data-anime="left" aria-valuemin="0" aria-valuemax="100">71%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Python</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 69%;" aria-valuenow="69" data-anime="left" aria-valuemin="0" aria-valuemax="100">69%</div>
+            </div>
+          </div>  
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Angular</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="58" data-anime="left" aria-valuemin="0" aria-valuemax="100">58%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">NodeJs (express)</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 51%;" aria-valuenow="51" data-anime="left" aria-valuemin="0" aria-valuemax="100">51%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Deploy</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="67" data-anime="left" aria-valuemin="0" aria-valuemax="100">67%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Flask</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" data-anime="left" aria-valuemin="0" aria-valuemax="100">66%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">PHP</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 74%;" aria-valuenow="74" data-anime="left" aria-valuemin="0" aria-valuemax="100">74%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">ReactJs</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 57%;" aria-valuenow="57" data-anime="left" aria-valuemin="0" aria-valuemax="100">57%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">SQL</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" data-anime="left" aria-valuemin="0" aria-valuemax="100">66%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0"><y>NoSQL</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 64%;" aria-valuenow="64" data-anime="left" aria-valuemin="0" aria-valuemax="100">64%</div>
+            </div>
+          </div>
+        </div>
+      
+        <hr class="w-50 me-auto ms-auto">
+
+        <div class="row">
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Trabalho em equipe</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" data-anime="left" aria-valuemin="0" aria-valuemax="100">78%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Gerenciamento de tempo</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 81%;" aria-valuenow="81" data-anime="left" aria-valuemin="0" aria-valuemax="100">81%</div>
+            </div>
+          </div>
+                    <div class="col-md-6">
+            <p class="mt-3 mb-0">Comprometimento</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" data-anime="left" aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Proatividade</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" data-anime="left" aria-valuemin="0" aria-valuemax="100">88%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Comunicação</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 71%;" aria-valuenow="71" data-anime="left" aria-valuemin="0" aria-valuemax="100">71%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Criatividade</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 83%;" aria-valuenow="83" data-anime="left" aria-valuemin="0" aria-valuemax="100">83%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Solução de problemas</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" data-anime="left" aria-valuemin="0" aria-valuemax="100">76%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Adaptabilidade</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 67%;" aria-valuenow="67" data-anime="left" aria-valuemin="0" aria-valuemax="100">67%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Pensamento crítico</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 68%;" aria-valuenow="68" data-anime="left" aria-valuemin="0" aria-valuemax="100">68%</div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="mt-3 mb-0">Inteligência emocional</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 73%;" aria-valuenow="73" data-anime="left" aria-valuemin="0" aria-valuemax="100">73%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Currículo -->
+    <section id="curriculo" class="py-4 cv dark-blue">
+      <div class="text-white container pb-5">
+        <h2 class="pt-5 fw-bold text-center" data-anime="up">Currículo</h2>
+        <div class="row">
+          <!-- Coluna de Educação -->
+          <div class="col-md-6">
+            <h3 class="cv-title">Formação</h3>
+            <!-- Item de Educação -->
+            <div class="cv-item" data-anime="up">
+              <h4 class="text-white">Esp. Docência em Ciêncic. e Tec. da Inf.</h4>
+              <h5>2019 - 2019</h5>
+              <p><em>Instituto Brasileiro de Formação</em></p>
+              <p>Pós-graduação voltada a área de docência com foco em tecnologia da informação e ciências da informação, com carga horária de 480 horas.</p>
+            </div>
+            <div class="cv-item" data-anime="up">
+              <h4 class="text-white">Esp. Docência em Ciêncic. e Tec. da Inf.</h4>
+              <h5>2019 - 2019</h5>
+              <p><em>Instituto Brasileiro de Formação</em></p>
+              <p>Pós-graduação voltada a área de docência com foco em tecnologia da informação e ciências da informação, com carga horária de 480 horas.</p>
+            </div>
+          </div>
+          <!-- Coluna de Cursos -->
+          <div class="pb-4 col-md-6">
+            <h3 class="cv-title">Cursos</h3>
+            <!-- Item de Cursos -->
+            <div class="cv-item" data-anime="up">
+              <h4 class="text-white">Esp. Docência em Ciêncic. e Tec. da Inf.</h4>
+              <h5>2019 - 2019</h5>
+              <p><em>Instituto Brasileiro de Formação</em></p>
+              <p>Pós-graduação voltada a área de docência com foco em tecnologia da informação e ciências da informação, com carga horária de 480 horas.</p>
+            </div>
+            <div class="cv-item" data-anime="up">
+              <h4 class="text-white">Esp. Docência em Ciêncic. e Tec. da Inf.</h4>
+              <h5>2019 - 2019</h5>
+              <p><em>Instituto Brasileiro de Formação</em></p>
+              <p>Pós-graduação voltada a área de docência com foco em tecnologia da informação e ciências da informação, com carga horária de 480 horas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <div id="contato" class="section pt-5 pb-5">
+      <div class="container mb-5">
+        <h2 class="pt-3 pb-3 text-center" data-anime="left">Contato</h2>
+        <div class="row">
+          <!-- Informação de Contato -->
+          <div class="col-md-5">
+            <div class="card p-5 shadow border-0" data-anime="up">
+              <div class="entereco">
+                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                <p>Rua José Trugillano, SP</p>
+                <div class="email">
+                  <h4><i class="bi bi-envelope"></i> Email:</h4>
+                  <p>roberto.carlossf2002@gmail.com</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4481.027890576869!2d-47.46467048526402!3d-23.43121584005641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f593b59aae85%3A0x4557e75025a71d72!2sR.%20Jos%C3%A9%20Trugillano%2C%20Sorocaba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1719141395052!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-100"></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- Formulário de Contato -->
+          <div class="col-md-7 mt-5 mt-md-0">
+            <div class="card p-5 h-100 shadow border-0" data-anime="left">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="nome" class="form-label">Nome:</label>
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+                </div>
+                <div class="col-12">
+                  <label for="mensagem" class="form-label">Mensagem:</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="10" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-5">
+                  <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="footer">
+    <div class="container">
+      <div class="text-center">
+        &copy; Copyright <strong>Thi Code</strong>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

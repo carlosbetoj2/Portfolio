@@ -1,0 +1,381 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Estilos gerais para html e body */
+html, body {
+  font-family: 'Ubuntu', Arial, sans-serif; /* Corrigido o nome da fonte */
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Removido o espaçamento padrão */
+  padding: 0; /* Removido o preenchimento padrão */
+}
+
+/* Estilos para o cabeçalho */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #021124;
+  overflow-y: auto;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  padding: 0 15px;
+  z-index: 9997;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
+  border-radius: 50%;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+#header .profile .social-links a {
+  font-size: 1rem;
+  background-color: #212431;
+  color: #fff;
+  padding: 0.6rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#header .profile .social-links a:hover {
+  background: #149ddd;
+}
+
+#sobre .social-links a{
+  font-size: 1.7rem;
+  background-color: #149ddd;
+  color: #000;
+  padding: 0.6rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+/* Estilos para o menu de navegação */
+.nav-menu {
+  padding: 1.5rem;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 0.8rem;
+  color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a i {
+  color: #149ddd;
+}
+
+.color-blue{
+  color: #149ddd;
+}
+
+/* Ajustes para o conteúdo principal */
+#main {
+  margin-left: 300px;
+}
+
+/* Estilos para a seção de início */
+section#inicio {
+  background-image: url("./background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section#inicio h2 {
+  font-size: 6rem;
+}
+
+section#inicio span#subtitle {
+  margin-right: 8rem;
+  font-size: 1.5rem;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 10px #000000;
+}
+
+section#inicio div#arraste {
+  width: 9rem;
+}
+
+section#inicio div#arraste a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para o ícone de menu móvel */
+i.menu-mobile {
+  position: fixed;
+  color: #fff;
+  background-color: #252c90;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Efeito de menu ativo */
+.menu-nav-active {
+  overflow: hidden;
+}
+
+.menu-nav-active #header {
+  left: 0;
+}
+
+/* Media query para telas menores que 1024px */
+@media (max-width: 1024px) {
+  #header {
+    left: -300px;
+  }
+
+  i.menu-mobile {
+    display: flex;
+  }
+
+  section#inicio h3 {
+    padding-right: 10px; /* Ajuste adicional de tamanho de fonte */
+    font-size: 1.1rem;
+  }
+  
+  section#inicio h1 {
+    padding-right: 10px; /* Ajuste adicional de tamanho de fonte */
+  }
+
+  section#inicio div#painel{
+    padding-top: 1.7rem;
+  }
+
+  section#inicio div#painel-icon{
+    width: 50%;
+  }
+
+  section#inicio span#subtitle {
+    margin-right: 0;
+    font-size: 1rem; /* Corrigido o tamanho da fonte */
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+
+/* Estilos para a barra de rolagem */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  width: 12px;
+  box-shadow: inset 0 0 .3rem rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #252c90;
+}
+
+/* Estilos para a seção de fundo */
+.section-bg {
+  background-color: #eff5ff;
+}
+
+/* Estilos para o currículo */
+.cv .cv-title {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cv .cv-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.cv .cv-item h4 {
+  line-height: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.cv .cv-item h5 {
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cv .cv-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -9px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #1f5297;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/* Ajustes para os controles do carrossel */
+.carousel-control-prev {
+  margin-left: -8rem;
+}
+
+.carousel-control-next {
+  margin-right: -8rem;
+}
+
+.carousel-indicators {
+  margin-bottom: -35px;
+}
+
+/* Efeitos de animação */
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="down"] {
+  transform: translate3d(0, -100%, 0);
+}
+
+[data-anime="up"] {
+  transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Media query para telas menores que 1860px */
+@media (max-width: 1860px) {
+  .carousel-control-prev {
+    margin-left: 0;
+  }
+
+  .carousel-control-next {
+    margin-right: 0;
+  }
+
+  [data-anime="right"] {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* Estilos para o rodapé */
+#footer {
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background-color: #021124;
+  transition: .3s;
+}
+
+/* Media query para telas menores que 1012px */
+@media (max-width: 1012px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding: 20px 15px;
+  }
+}
+
+.custom-list-item {
+  background-color: transparent;
+  border: none;
+}
+
+.dark-blue{
+  background-color: #010a15;
+}
+
+section#portfolio div#box-img{
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  padding: .5%;
+  box-shadow: 5px 5px 15px -1px #ccc;
+}
+
+section#portfolio div#box-img .img{
+  width: 100%;
+  height: 100%;
+  background-image: url("../Projeto01.png");
+  background-size: cover;
+  background-position: top;
+  transition: all linear 1.7s;
+}
+
+section#portfolio div#box-img .img:hover{
+  background-position: bottom;
+}
